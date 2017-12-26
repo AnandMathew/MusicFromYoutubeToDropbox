@@ -40,7 +40,7 @@ def videos_list_my_rated_videos(service, **kwargs):
   ).execute()
   
   for likedVideo in response['items']:
-      if likedVideo and (likedVideo['snippet']['categoryId'] == "10" or likedVideo['snippet']['categoryId'] == "24" ):
+      if likedVideo and (likedVideo['snippet']['categoryId'] == "10" or likedVideo['snippet']['categoryId'] == "24") and (likedVideo['contentDetails']['licensedContent'] is not True):
           videoIds.append(likedVideo['id']) 
           
   try:
@@ -106,7 +106,7 @@ if __name__ == '__main__':
         del newVideoIds[:]
 
     job();
-    schedule.every(.3).minutes.do(job);
+    schedule.every(4).hours.do(job);
 
     while True:
         schedule.run_pending()

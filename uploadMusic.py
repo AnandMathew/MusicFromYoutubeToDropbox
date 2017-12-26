@@ -20,6 +20,6 @@ def uploadToDropbox():
         f.close();
         print "File uploaded"
         os.remove("/mnt/c/dev/song-uploader/songs/"+filename);
-        print  filename + " is removed"
+        print  filename + " is removed locally"
 
 
