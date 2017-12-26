@@ -3,9 +3,9 @@
 ## Synopsis   
 
 Polls your youtube account every 4 hours for a list of liked videos. It then compares the list to a previously polled list to discover any new liked videos. It then uses [youtube-dl](https://github.com/rg3/youtube-dl) to download the video as a m4a file if it is a music video under Creative Common Licence.
-Consequently, the service uploads the m4a file to your dopbox under the folder "music".
+Consequently, the service uploads the m4a file to your Dropbox under the folder "music".
 
-Ideally, once you start the service and let it run, all you have to do is like videos for it to eventually show up in your Dropbox
+Ideally, once you start the service and let it run, all you have to do is like videos for it to eventually show up in your Dropbox.
 
 ## Setup
 
